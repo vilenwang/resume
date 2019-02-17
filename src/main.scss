@@ -2,7 +2,8 @@
 @import "../node_modules/compass-mixins/lib/compass/css3";
 
 $color-gray: #d1d1d1;
-$color-green: #00b38a;
+// $color-green: #00b38a;
+$color-green: #4285f4;
 $font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 
 * {
@@ -282,6 +283,9 @@ a {
     overflow: hidden;
     font-weight: 500;
     min-height: 30px;
+    span{
+      font-weight: 600;
+    }
     .item-time {
       display: inline-block;
       float: left;
@@ -372,4 +376,8 @@ a {
   @media print {
     display: none;
   }
+}
+
+b{
+  font-weight: 600;
 }

@@ -10,7 +10,7 @@
     <base target="_blank">
   </head>
   <body>
-    <p class="last-modified">最后更新于2022年2月</p>
+    <p class="last-modified">最后更新于2023年5月</p>
     <a class="download-pdf" href="resume.pdf">下载 PDF</a>
 
     <main class="content">
@@ -27,7 +27,7 @@
         </section>
         <section class="info">
           <ul>
-            <li>男</li>
+            <li>男 · 26岁</li>
             <li>四川交通职业技术学院 · 软件技术</li>
             <li>专科</li>
           </ul>
@@ -92,9 +92,62 @@
               <!--经历:工作-->
               <div class="item">
                 <header class="item-hd">
+                  <h3 class="item-name">中集创见(成都)科技有限公司</h3>
+                  <span class="item-time">2022.06 至今</span>
+                  <a class="btn item-more" href="#">工作</a>
+                </header>
+                <div class="item-bd">
+                  <p class="item-des">前端开发，包括：</p>
+                  <ul class="section-content">
+                    <li>
+                      室内导航《光享导航》的开发与维护。目前使用医院和停车场：成都东客站、天府新区人民医院
+                    </li>
+                    <li>室内人员被动定位数字化管理平台</li>
+                    <li>小程序开发</li>
+                    <li>h5开发</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <header class="item-hd">
+                  <h3 class="item-name">黑龙江创想科技有限公司</h3>
+                  <span class="item-time">2021.08 至 2022.06</span>
+                  <a class="btn item-more" href="#">工作</a>
+                </header>
+                <div class="item-bd">
+                  <p class="item-des">前端开发，包括：</p>
+                  <ul class="section-content">
+                    <li>
+                      室内导航《光享导航》的开发与维护。目前使用医院和停车场：成都东客站、天府新区人民医院
+                    </li>
+                    <li>室内人员被动定位数字化管理平台</li>
+                    <li>小程序开发</li>
+                    <li>h5开发</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <header class="item-hd">
+                  <h3 class="item-name">成都宏飞弘科技有限公司</h3>
+                  <span class="item-time">2021.02 至2021.08</span>
+                  <a class="btn item-more" href="#">工作</a>
+                </header>
+                <div class="item-bd">
+                  <p class="item-des">前端开发，包括：</p>
+                  <ul class="section-content">
+                    <li>电商项目《享优家》开发与维护</li>
+                    <li>小程序开发</li>
+                    <li>公众号开发</li>
+                    <li>RN 开发</li>
+                    <li>Vue 组件库开发与维护</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <header class="item-hd">
                   <h3 class="item-name">四川蜀银信息科技有限公司</h3>
                   <span class="item-time">2019.06 至 2021.01</span>
-                  <a class="btn item-more" href="https://in985.com">工作</a>
+                  <a class="btn item-more" href="#">工作</a>
                 </header>
                 <div class="item-bd">
                   <p class="item-des">前端开发，包括：</p>
@@ -111,42 +164,96 @@
                   </ul>
                 </div>
               </div>
+            </div>
+          </section>
+          <section class="skill">
+            <header class="section-hd">
+              <span class="section-title-l"></span>
+              <h2 class="section-title">开源</h2>
+              <span class="section-title-r"></span>
+            </header>
+            <div class="section-bd">
+              <!--技能:JS-->
               <div class="item">
                 <header class="item-hd">
-                  <h3 class="item-name">成都宏飞弘科技有限公司</h3>
-                  <span class="item-time">2021.02 至2021.08</span>
-                  <a class="btn item-more" href="https://in985.com">工作</a>
+                  <span class="item-time">wx-query</span>
+                  <a class="btn item-more" href="https://kunkunj.github.io/query-doc/#/">地址</a>
                 </header>
                 <div class="item-bd">
-                  <p class="item-des">前端开发，包括：</p>
+                  <p class="item-des">仓库介绍：</p>
                   <ul class="section-content">
-                    <li>电商项目《享优家》开发与维护</li>
-                    <li>小程序开发</li>
-                    <li>公众号开发</li>
-                    <li>RN 开发</li>
-                    <li>Vue 组件库开发与维护</li>
+                    <li>
+                      wxQuery是一款原生微信小程序的封装库，
+                      提供了复杂表单双向绑定驱动、sotre状态存储器、wxRequest请求库
+                    </li>
+                  </ul>
+                  <br>
+                  <p class="item-des">开源背景：</p>
+                  <ul class="section-content">
+                    <li>背景1：数据双向绑定</li>
+                    <li>
+                      原生微信小程序里没有数据双向绑定的概念，导致了许多需要有双向绑定的需求实现起来代码臃肿。
+                      wx-query中实现了Page和Componet构造器巧妙的实现了数据双向绑定，解决了这个问题
+                    </li>
+                    <li>背景2：WxRequest的封装</li>
+                    <li>
+                      原生wx.request()方法虽然有一定程度上的封装，但是与像Axios这样的具有Prosmise链式调用请求api还是有很大差距。
+                      所以为wx-query打造了一个的请求api的plugin-WxRequest。WxRequest基于Promise封装，并且实现了请求拦截器和响应拦截器来为开发者提供便利。
+                    </li>
+                    <li>背景3：状态存储器Store</li>
+                    <li>
+                      在原生小程序中，虽然提供了全局变量globalData；但是却不是响应式的，无法做到一处更改，全局更新的效果。
+                      所以wx-query提供了一个Store状态存储器，实现了通过action动作触发state更改，state更改则更新所有使用了state的页面和组件，采用单向数据流模式。
+                    </li>
+                    <li>
+                      官方文档：<a href="https://kunkunj.github.io/query-doc/">https://kunkunj.github.io/query-doc/</a>
+                    </li>
+                    <li>
+                      GitHub：<a href="https://github.com/kunkunj/wx-query">https://github.com/kunkunj/wx-query</a>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="item">
                 <header class="item-hd">
-                  <h3 class="item-name">黑龙江创想科技有限公司</h3>
-                  <span class="item-time">2021.08 至今</span>
-                  <a class="btn item-more" href="https://in985.com">工作</a>
+                  <span class="item-time">Thesjs</span>
+                  <a class="btn item-more" href="https://kunkunj.github.io/thesjs-docs/#/">地址</a>
                 </header>
                 <div class="item-bd">
-                  <p class="item-des">前端开发，包括：</p>
+                  <p class="item-des">仓库介绍：</p>
                   <ul class="section-content">
-                    <li>室内导航《光享导航》的开发与维护。目前使用医院和停车场：成都东客站、天府新区人民医院</li>
-                    <li>室内人员被动定位数字化管理平台</li>
-                    <li>小程序开发</li>
-                    <li>h5开发</li>
+                    <li>
+                      Thesjs是一款基于threejs的3d封装库,集成了threejs的部分功能
+                      除自己的集成方法外,同时也暴露了threejs的原生对象,提高功能的可扩展性。同时还实现了一个动画过渡库(相机动画、模型动画)
+                    </li>
+                  </ul>
+                  <br>
+                  <p class="item-des">开源背景：</p>
+                  <ul class="section-content">
+                    <li>背景1：代码共性</li>
+                    <li>
+                      threejs平常开发中会有很多可复用代码，比如加载obj、mtl等文件，又比如创建几何体等。
+                      Thesjs提供了构造方法，可以通过配置option的方式创建模型体和几何体
+                    </li>
+                    <li>背景2：动画</li>
+                    <li>
+                      Thesjs实现了一套过渡的效果，整合到模型和几何体的自身方法中，可以便捷的实现很复杂的运动效果
+                    </li>
+                    <li>背景2：性能优化</li>
+                    <li>
+                      threejs没有提供依赖收集和场景懒加载等应用型需求，Thesjs提供了相应的功能，大大便捷了开发代码
+                    </li>
+                    <li>
+                      官方文档：<a href="https://kunkunj.github.io/thesjs-docs/#/">https://kunkunj.github.io/thesjs-docs/</a>
+                    </li>
+                    <li>
+                      GitHub：<a href="https://github.com/kunkunj/thesjs">https://github.com/kunkunj/thesjs</a>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
           </section>
-
           <section class="skill">
             <header class="section-hd">
               <span class="section-title-l"></span>
@@ -162,12 +269,10 @@
                 </header>
                 <div class="item-bd">
                   <ul class="section-content">
-                    <li>
-                      html5、css3、es6、typescript
-                    </li>
+                    <li>html5、css3、es6、typescript</li>
                     <li>Vue及其全家桶，</li>
                     <li>熟悉微信小程序</li>
-                    <li>项目工程化：webpack、gulp</li>
+                    <li>项目工程化：webpack、rollup</li>
                     <li>代码管理：git、svn</li>
                     <li>通信库：axios、fly</li>
                     <li>网络通信协议：http、websocket</li>
@@ -200,9 +305,7 @@
                 </header>
                 <div class="item-bd">
                   <ul class="section-content">
-                    <li>
-                      ReactNative开发电商App
-                    </li>
+                    <li>ReactNative开发电商App</li>
                     <li>ReactNative调试</li>
                     <li>会使用antd组件库</li>
                     <li>各种个性化组件开发</li>
@@ -217,9 +320,7 @@
                 </header>
                 <div class="item-bd">
                   <ul class="section-content">
-                    <li>
-                      uniApp多端编译
-                    </li>
+                    <li>uniApp多端编译</li>
                     <li>
                       掌握uniApp各种多端编译，包括且不限于webApp、微信小程序
                     </li>
@@ -229,40 +330,8 @@
                 </div>
               </div>
               <!--构建工具-->
-              <!-- <div class="item">
-                <header class="item-hd">
-                  <span class="item-time">构建工具</span>
-                  <a class="btn item-more">熟练配置</a>
-                </header>
-                <div class="item-bd">
-                  <ul class="section-content">
-                    <li>
-                      webpack：修改vue_cli项目，使之更加符合公司项目开发流程
-                    </li>
-                    <li>
-                      gulp：制作mx_gulp_cli,使公司的小型营销项目开发更快捷
-                    </li>
-                  </ul>
-                </div>
-              </div> -->
 
               <!-- 小程序 -->
-              <div class="item">
-                <header class="item-hd">
-                  <span class="item-time">小程序</span>
-                  <a class="btn item-more">熟练</a>
-                </header>
-                <div class="item-bd">
-                  <ul class="section-content">
-                    <li>以下出现的小程序名称皆可在微信中搜索到：</li>
-                    <li>
-                      主导开发《梅州五华家政超市》，单独开发《光享导航》、《高数诊断》、《小魔针》、《融积付》、《温江慧就业》
-                    </li>
-                    <li>熟悉小程序api及其项目优化</li>
-                    <li>《小魔针》、《融积付》小程序使用"uniaApp"框架开发</li>
-                  </ul>
-                </div>
-              </div>
               <!--Nodejs-->
               <!-- <div class="item">
               <header class="item-hd">
@@ -278,49 +347,25 @@
             </div> -->
 
               <!--网络协议-->
-              <div class="item">
-                <header class="item-hd">
-                  <span class="item-time">网络协议</span>
-                  <a class="btn item-more">比较熟悉</a>
-                </header>
-                <div class="item-bd">
-                  <ul class="section-content">
-                    <li>
-                      websocket:
-                      <a href="https://lbs.jywj12333.com/">《就业温江》</a>聊天室开发使用
-                    </li>
-                  </ul>
-                </div>
-              </div>
 
               <!--网络协议-->
-              <div class="item">
+              <!-- <div class="item">
                 <header class="item-hd">
                   <span class="item-time">代码管理</span>
                   <a class="btn item-more">掌握</a>
                 </header>
                 <div class="item-bd">
                   <ul class="section-content">
-                    <li>git: 公司项目都是用 git 管理的，熟悉git flow流程控制</li>
+                    <li>
+                      git: 公司项目都是用 git 管理的，熟悉git flow流程控制
+                    </li>
                     <li>
                       svn：用的不多，但是会用，是因为之前一个小程序合作开发时使用过
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> -->
               <!--音视频-->
-              <!-- <div class="item">
-              <header class="item-hd">
-                <span class="item-time">音视频</span>
-                <a class="btn item-more">掌握</a>
-              </header>
-              <div class="item-bd">
-                <ul class="section-content">
-                  <li>掌握音视频基础概念编解码知识与常见音视频传输协议</li>
-                  <li>掌握web直播技术架构与原理</li>
-                </ul>
-              </div>
-            </div> -->
 
               <!--数据库-->
               <!-- <div class="item">
@@ -337,24 +382,88 @@
             </div> -->
 
               <!--其它-->
-              <div class="item">
-                <header class="item-hd">
-                  <span class="item-time">其它</span>
-                  <a class="btn item-more">熟练使用</a>
-                </header>
-                <div class="item-bd">
-                  <ul class="section-content">
-                    <li>axios、fly、moment、layui、fetch</li>
-                    <li>swiper</li>
-                    <li>ECharts、svg</li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </section>
         </div>
 
         <div class="content-right">
+          <div class="item">
+            <header class="item-hd">
+              <span class="item-time">音视频</span>
+              <a class="btn item-more">掌握</a>
+            </header>
+            <div class="item-bd">
+              <ul class="section-content">
+                <li>掌握web直播技术</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <header class="item-hd">
+              <span class="item-time">地图</span>
+              <a class="btn item-more">掌握</a>
+            </header>
+            <div class="item-bd">
+              <ul class="section-content">
+                <li>掌握高德、百度、腾讯地图开发和导航开发</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <header class="item-hd">
+              <span class="item-time">构建工具</span>
+              <a class="btn item-more">熟练配置</a>
+            </header>
+            <div class="item-bd">
+              <ul class="section-content">
+                <li>webpack：修改vue_cli项目，使之更加符合公司项目开发流程</li>
+                <li>rollup：便携式开发，封装sdk时为项目做整体架构</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <header class="item-hd">
+              <span class="item-time">网络协议</span>
+              <a class="btn item-more">比较熟悉</a>
+            </header>
+            <div class="item-bd">
+              <ul class="section-content">
+                <li>
+                  websocket:
+                  <a href="https://lbs.jywj12333.com/">《就业温江》</a>聊天室开发使用
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <header class="item-hd">
+              <span class="item-time">小程序</span>
+              <a class="btn item-more">熟练</a>
+            </header>
+            <div class="item-bd">
+              <ul class="section-content">
+                <li>以下出现的小程序名称皆可在微信中搜索到：</li>
+                <li>
+                  主导开发《梅州五华家政超市》，单独开发《光享导航》、《高数诊断》、《小魔针》、《融积付》、《温江慧就业》
+                </li>
+                <li>熟悉小程序api及其项目优化</li>
+                <li>《小魔针》、《融积付》小程序使用"uniaApp"框架开发</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <header class="item-hd">
+              <span class="item-time">其它</span>
+              <a class="btn item-more">熟练使用</a>
+            </header>
+            <div class="item-bd">
+              <ul class="section-content">
+                <li>axios、fly、moment、layui、fetch</li>
+                <li>swiper</li>
+                <li>ECharts、svg</li>
+              </ul>
+            </div>
+          </div>
           <section class="project">
             <header class="section-hd">
               <span class="section-title-l"></span>
@@ -371,7 +480,7 @@
                 </header>
                 <div class="item-bd">
                   <ul>
-                    <li>项目周期：2019.8 至 2019.9 （现在仍在改需求）</li>
+                    <li>项目周期：2019.8 至 2019.9</li>
                     <li>
                       项目介绍：温江就业局的官方招聘公众号，包括求职者和招聘者两种角色，求职者可以进行搜索、收藏、关注职位等，招聘者可以进行搜索、收藏求职者等，求职者和招聘者可以进行聊天.
                     </li>
@@ -379,7 +488,8 @@
                       <b>我做了啥</b>：前端开发，项目结构、组件设计、代码编写、bug处理及项目维护
                     </li>
                     <li>
-                      技术栈：uniApp + 微信jssdk(分享、授权) + webstock实现实时通信
+                      技术栈：uniApp + 微信jssdk(分享、授权) +
+                      webstock实现实时通信
                     </li>
                   </ul>
                 </div>
@@ -422,9 +532,7 @@
                     <li>
                       <b>我做了啥</b>：前端开发，技术选型、项目架构、组件设计、代码编写、bug处理及项目维护
                     </li>
-                    <li>
-                      技术栈：uniApp编译小程序 + echarts + 精灵图
-                    </li>
+                    <li>技术栈：uniApp编译小程序 + echarts + 精灵图</li>
                   </ul>
                 </div>
               </div>
@@ -436,7 +544,9 @@
                 <div class="item-bd">
                   <ul>
                     <li>项目周期：2020.2 至 2020.3</li>
-                    <li>项目背景：梅州五华县政府迫切想要一款信息化产品解决家政人员的上门服务和具有家政需求的家庭的沟通与预定，于是与我司合作一款信息化的家政上门服务小程序</li>
+                    <li>
+                      项目背景：梅州五华县政府迫切想要一款信息化产品解决家政人员的上门服务和具有家政需求的家庭的沟通与预定，于是与我司合作一款信息化的家政上门服务小程序
+                    </li>
                     <li>
                       项目介绍：用户端与家政人员端，用户端下单，家政人员接收到订单信息并且上门服务。完成后，线上支付家政费用。
                     </li>
@@ -461,7 +571,10 @@
                     <li>
                       <b>我做了啥</b>：前端开发，技术选型、项目架构、组件设计、代码编写、bug处理及项目维护
                     </li>
-                    <li>技术栈：uniApp + 微信支付 + 支付宝支付 + 微信分享 + webstock</li>
+                    <li>
+                      技术栈：uniApp + 微信支付 + 支付宝支付 + 微信分享 +
+                      webstock
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -479,9 +592,7 @@
                     <li>
                       <b>我做了啥</b>：整体项目前端实现，包括选型、页面构建、echarts图表调用等等功能
                     </li>
-                    <li>
-                      技术栈：Vue、Vue-router、Echarts等
-                    </li>
+                    <li>技术栈：Vue、Vue-router、Echarts等</li>
                   </ul>
                 </div>
               </div>
@@ -500,7 +611,8 @@
                       <b>我做了啥</b>：前端开发，技术选型、项目架构、组件设计、代码编写、bug处理及项目维护
                     </li>
                     <li>
-                      技术栈：vue + vue-router + vuex + 思极地图 + echarts + cesium
+                      技术栈：vue + vue-router + vuex + 思极地图 + echarts +
+                      cesium
                     </li>
                   </ul>
                 </div>
@@ -519,9 +631,7 @@
                     <li>
                       <b>我做了啥</b>：前端开发，技术选型、项目架构、组件设计、代码编写、bug处理及项目维护
                     </li>
-                    <li>
-                      技术栈：vue3 + typescript + vant + jssdk
-                    </li>
+                    <li>技术栈：vue3 + typescript + vant + jssdk</li>
                   </ul>
                 </div>
               </div>
@@ -533,11 +643,10 @@
                 <div class="item-bd">
                   <ul>
                     <li>项目周期：2021.05 至 2021.07</li>
+                    <li>项目介绍：享优家App，商城、订单、购物车功能。</li>
                     <li>
-                      项目介绍：享优家App，商城、订单、购物车功能。
-                    </li>
-                    <li>
-                      <b>我做了啥</b>：1. 项目选项。 2. 基础架构。 3. 全功能开发。 4. bug修复以及功能迭代
+                      <b>我做了啥</b>：1. 项目选项。 2. 基础架构。 3.
+                      全功能开发。 4. bug修复以及功能迭代
                     </li>
                     <li>
                       技术栈：react-native、react-navigation、react-native-wechat、react-native-yunpeng-alipay
@@ -552,16 +661,32 @@
                 </header>
                 <div class="item-bd">
                   <ul>
-                    <li>项目周期：2021.08 至 今</li>
+                    <li>项目周期：2021.08 至 2022.06</li>
                     <li>
                       项目介绍：室内导航小程序，采用蓝牙信标定位，前端地图呈现采用蜂鸟云室内导航地图，目前试点于天府新区人民医院、成都东客站，可在线查看医院楼层科室结构和实时进行院内导航。
                     </li>
                     <li>
                       <b>我做了啥</b>：前端开发，技术选型、项目架构、组件设计、代码编写、bug处理及项目维护
                     </li>
+                    <li>技术栈：fengMap + 原生小程序开发 + vant + 蓝牙定位</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="item">
+                <header class="item-hd">
+                  <span>中集创见内部低代码平台</span>
+                  <a class="btn item-more" href="javascript:;">项目</a>
+                </header>
+                <div class="item-bd">
+                  <ul>
+                    <li>项目周期：2022.08 至 今</li>
                     <li>
-                      技术栈：fengMap + 原生小程序开发 + vant + 蓝牙定位
+                      项目介绍：低代码平台分为pc-admin、pda、可视化看板、3d制作四个大的模块。本人负责可视化看板和3d制作板块，参与pc-admin和pda的组件和事件开发。
                     </li>
+                    <li>
+                      <b>我做了啥</b>：前端开发，技术选型、项目架构、组件设计、代码编写、bug处理及项目维护
+                    </li>
+                    <li>技术栈：vue3 + threejs + echarts</li>
                   </ul>
                 </div>
               </div>
